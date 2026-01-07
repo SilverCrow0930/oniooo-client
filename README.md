@@ -1,6 +1,6 @@
-# Oniooo Client 🎨
+# Oniooo.com 🎨
 
-> Everything in Melody
+> Everything in Oniooo.com
 
 A modern Next.js application that powers **Melody**, an AI-powered creative assistant platform. Create stunning images, videos, music, and more with cutting-edge AI tools—all from a single, seamless interface.
 
@@ -8,14 +8,14 @@ A modern Next.js application that powers **Melody**, an AI-powered creative assi
 
 ## ✨ Features
 
-- 🤖 **AI Chat Assistant** - Interactive conversation interface powered by real-time WebSocket communication
-- 🎨 **Image Generation** - Create beautiful images from text descriptions
-- 🎬 **Video Generation** - Generate videos with AI-powered tools
-- 🎵 **Music Creation** - Compose and generate music tracks
-- 📎 **File Support** - Upload and process various file types (audio, PDF, images)
-- 💳 **Payment Integration** - Stripe-powered payment system with Mochi credits
-- 🔐 **Authentication** - Google OAuth integration for secure access
-- 💬 **Real-time Chat** - Socket.io powered chat interface for instant responses
+- **AI Chat Assistant** - Interactive conversation interface powered by real-time WebSocket communication
+- **Image Generation** - Create beautiful images from text descriptions
+- **Video Generation** - Generate videos with AI-powered tools
+- **Music Creation** - Compose and generate music tracks
+- **File Support** - Upload and process various file types (audio, PDF, images)
+- **Payment Integration** - Stripe-powered payment system with Mochi credits
+- **Authentication** - Google OAuth integration for secure access
+- **Real-time Chat** - Socket.io powered chat interface for instant responses
 
 ![Chat Interface](Oniooo_screenshot%202.png)
 
