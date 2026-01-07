@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Oniooo Client 🎨
 
-## Getting Started
+> Everything in Melody
 
-First, run the development server:
+A modern Next.js application that powers **Melody**, an AI-powered creative assistant platform. Create stunning images, videos, music, and more with cutting-edge AI tools—all from a single, seamless interface.
 
+![Melody Interface](Oniooo_screenshot%201.png)
+
+## ✨ Features
+
+- 🤖 **AI Chat Assistant** - Interactive conversation interface powered by real-time WebSocket communication
+- 🎨 **Image Generation** - Create beautiful images from text descriptions
+- 🎬 **Video Generation** - Generate videos with AI-powered tools
+- 🎵 **Music Creation** - Compose and generate music tracks
+- 📎 **File Support** - Upload and process various file types (audio, PDF, images)
+- 💳 **Payment Integration** - Stripe-powered payment system with Mochi credits
+- 🔐 **Authentication** - Google OAuth integration for secure access
+- 💬 **Real-time Chat** - Socket.io powered chat interface for instant responses
+
+![Chat Interface](Oniooo_screenshot%202.png)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd oniooo-client
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Set up environment variables:
+Create a `.env.local` file in the root directory with the following variables:
+```env
+NEXT_PUBLIC_PRODUCTION_BACKEND_URL=your-production-backend-url
+NEXT_PUBLIC_DEVELOPMENT_BACKEND_URL=your-development-backend-url
+BACKEND_PORT=8080
+API_VERSION=v1
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Melody Features](Oniooo_screenshot%203.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: Redux Toolkit
+- **Real-time**: Socket.io Client
+- **Authentication**: Supabase Auth + Google OAuth
+- **Payments**: Stripe
+- **File Storage**: AWS S3 / Google Cloud Storage
+- **UI Components**: Material-UI, Framer Motion
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+oniooo-client/
+├── src/
+│   ├── app/              # Next.js app router pages
+│   │   ├── melody/       # Main Melody chat interface
+│   │   ├── shop/         # Mochi marketplace
+│   │   └── api/          # API routes
+│   ├── components/       # React components
+│   │   ├── melody/      # Melody-specific components
+│   │   ├── auth/        # Authentication components
+│   │   └── modals/      # Modal components
+│   ├── contexts/        # React contexts
+│   ├── lib/             # Utility functions and types
+│   └── utils/           # Helper utilities
+├── public/              # Static assets
+└── package.json
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🎯 Key Components
 
-## Deploy on Vercel
+- **MelodyInterface** - Main chat interface component
+- **ChatSocketContext** - Real-time WebSocket connection management
+- **AuthContext** - Authentication state management
+- **FileUpload** - Multi-file upload with preview
+- **MessageList** - Chat message rendering with markdown support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧪 Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+
+# Run linter
+npm run lint
+```
+
+## 📝 License
+
+This project is private and proprietary.
+
+## 🤝 Contributing
+
+This is a private project. For questions or support, please contact the development team.
+
+---
+
+Built with ❤️ by the Oniooo team
